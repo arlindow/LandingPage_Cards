@@ -102,3 +102,9 @@ footer {
   color: black;
 }
 
+/* Combine isso com vertical-align: middle; ou margin-right: 5px; se quiser alinhar com o texto: */
+.icon-github {
+  font-size: 50px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
