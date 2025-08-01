@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Sistemas Operacionais</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -12,23 +12,48 @@
 
   <main class="cards-container">
     <div class="card" id="windows">
-      <img src="images/windows_logo.png" alt="Logo Windows">
+      <img src="images/windows_logo.png" alt="Logo Windows" width="80" />
       <h2>Windows</h2>
-      <p>O Windows é um sistema operacional da Microsoft, conhecido por sua interface gráfica fácil de usar e ampla compatibilidade com softwares e jogos. É amplamente usado em computadores pessoais, empresas e escolas.</p>
+      <p>
+        O Windows é um sistema operacional da Microsoft, conhecido por sua
+        interface gráfica fácil de usar e ampla compatibilidade com softwares
+        e jogos. É amplamente usado em computadores pessoais, empresas e
+        escolas.
+      </p>
+      <button class="btn-details" data-os="windows">Ver resumo completo</button>
     </div>
 
     <div class="card" id="macos">
-      <img src="images/macos_logo.png" alt="Logo macOS">
+      <img src="images/macos_logo.png" alt="Logo macOS" width="80" />
       <h2>macOS</h2>
-      <p>O macOS é o sistema da Apple para computadores Mac. Oferece desempenho estável, visual refinado e integração com outros dispositivos Apple como iPhone e iPad.</p>
+      <p>
+        O macOS é o sistema da Apple para computadores Mac. Oferece desempenho
+        estável, visual refinado e integração com outros dispositivos Apple
+        como iPhone e iPad.
+      </p>
+      <button class="btn-details" data-os="macos">Ver resumo completo</button>
     </div>
 
     <div class="card" id="linux">
-      <img src="images/Linux_logo.jpg" alt="Logo Linux">
+      <img src="images/Linux_logo.jpg" alt="Logo Linux" width="80" />
       <h2>Linux</h2>
-      <p>O Linux é um sistema operacional livre e de código aberto. É muito usado em servidores e também em desktops. É seguro, estável e altamente personalizável.</p>
+      <p>
+        O Linux é um sistema operacional livre e de código aberto. É muito
+        usado em servidores e também em desktops. É seguro, estável e altamente
+        personalizável.
+      </p>
+      <button class="btn-details" data-os="linux">Ver resumo completo</button>
     </div>
   </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
 
   <footer>
     <p>Landing page criada com HTML, CSS e JavaScript</p>
